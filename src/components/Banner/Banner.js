@@ -3,13 +3,14 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
-    backgroundImage: "url(./banner2.jpg)",
+    // backgroundImage: "url(./bannermain.jpg)",
+    backgroundImage:"url(./bannermain.jpg)",
   },
   bannerContent: {
     height: 400,
     display: "flex",
     flexDirection: "column",
-    paddingTop: 25,
+    paddingTop: 15,
     justifyContent: "space-around",
   },
   tagline: {
@@ -47,6 +48,7 @@ function Banner() {
             variant="subtitle2"
             style={{
               color: "darkgrey",
+              // color: "white",
               textTransform: "capitalize",
               fontFamily: "Montserrat",
             }}

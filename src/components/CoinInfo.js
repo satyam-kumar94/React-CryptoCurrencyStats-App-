@@ -11,7 +11,7 @@ import {
 import SelectButton from "./SelectButton";
 import { chartDays } from "../config/data";
 import { CryptoState } from "../CryptoContext";
-import { pink } from "@material-ui/core/colors";
+// import { pink } from "@material-ui/core/colors";
 
 const CoinInfo = ({ coin }) => {
   const [historicData, setHistoricData] = useState();
