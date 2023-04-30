@@ -1,4 +1,4 @@
-# Cryptocurrency Tracker with React JS, Material UI and Chart JS
+# Cryptocurrency State App with React JS, Material UI and Chart JS
 
 ## Built with 
 
