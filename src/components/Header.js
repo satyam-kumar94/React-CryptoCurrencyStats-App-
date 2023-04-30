@@ -12,6 +12,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
+import AuthModal from "./Authentication/AuthModal";
 import { CryptoState } from "../CryptoContext";
 
 const useStyles = makeStyles((theme) => ({
@@ -50,6 +51,7 @@ function Header() {
               className={classes.title}
             >
               it's Your Crypto
+             
             </Typography>
             {/* <Button color="inherit">Login</Button> */}
             <Select
@@ -63,6 +65,7 @@ function Header() {
               <MenuItem value={"USD"}>USD</MenuItem>
               <MenuItem value={"INR"}>INR</MenuItem>
             </Select>
+            <AuthModal/>
           </Toolbar>
         </Container>
       </AppBar>

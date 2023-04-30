@@ -42,7 +42,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            YOUR CRYPTO 
+            YOUR CRYPTO
           </Typography>
           <Typography
             variant="subtitle2"
