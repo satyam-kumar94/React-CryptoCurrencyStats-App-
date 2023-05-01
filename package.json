@@ -1,5 +1,5 @@
 {
-  "name": "crypto-tracker",
+  "name": "crypto-state-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
