@@ -21,6 +21,7 @@ import { auth, db } from "../../firebase";
 import { numberWithCommas } from "../CoinsTable";
 import { AiFillDelete } from "react-icons/ai";
 import { doc, setDoc } from "firebase/firestore";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   container: {
@@ -76,6 +77,12 @@ const useStyles = makeStyles({
     backgroundColor: "#EEBC1D",
     boxShadow: "0 0 3px black",
   },
+  buyButton: {
+    fontSize: 15,
+    backgroundColor: "#EEBC1D",
+    textShadow: "0 0 5px black",
+    marginTop: "120px",
+  },
 });
 
 export default function UserSidebar() {
@@ -84,6 +91,11 @@ export default function UserSidebar() {
     right: false,
   });
   const { user, setAlert, watchlist, coins, symbol } = CryptoState();
+  const history = useHistory();
+
+  const handleAccountPage = () => {
+    history.push("/AccountPage"); // Replace "/AccountPage" with the actual path of your "AccountPage.js" file
+  };
 
   console.log(watchlist, coins);
 
@@ -193,8 +205,17 @@ export default function UserSidebar() {
                       );
                     else return <></>;
                   })}
+
+                  
                 </div>
               </div>
+              <Button
+                    variant="contained"
+                    className={classes.buyButton}
+                    onClick={handleAccountPage}
+                  >
+                    Buy Now
+                  </Button>
               <Button
                 variant="contained"
                 className={classes.logout}
