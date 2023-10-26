@@ -5,7 +5,7 @@ import { CryptoState } from "../CryptoContext";
 import { numberWithCommas } from "../components/CoinsTable";
 
 const AccountPage = () => {
-  const { user, setAlert, watchlist, coins, symbol } = CryptoState();
+  const { setAlert, watchlist, coins, symbol } = CryptoState();
 
   const history = useHistory();
   const [formValid, setFormValid] = useState(false); // State to track form validity
